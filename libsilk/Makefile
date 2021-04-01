@@ -1,2 +1,2 @@
 app:
-	gcc -I./interface -L. -lsilk -lm testdecoder.c -o decoder
+	gcc -I./interface -L. -lsilk -lm test_decoder.c -o decoder

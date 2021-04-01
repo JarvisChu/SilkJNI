@@ -1,10 +1,13 @@
 # SILK JNI
 
 ## 目录结构
+
+```
 .
 |-- jni      : libsilkjni.so库和源码，以及demo
 |-- libsilk  : libsilk.so库及demo
 `-- silksrc  : silk c 源码，从 https://github.com/ploverlake/silk 拷贝而来
+```
 
 ## 使用说明
 

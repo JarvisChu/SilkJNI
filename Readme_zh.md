@@ -37,6 +37,8 @@ cd libsilk/
 
 3. 进入jni，编译libsilkjni.so 和相关demo
 
+> 注意：因为libsilkjni.so 依赖libsilk.so，所以请将上一步的libsilk.so放到可以找到的目录中，如/usr/lib64.
+
 ```bash
 cd jni/
 ./build_jni.sh # 编译得到一个libsilkjni.so文件

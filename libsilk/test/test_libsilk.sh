@@ -2,7 +2,7 @@
 make
 
 cp ../release/libsilk.so .
-rm *.pcm *.silk
+rm -f *.pcm *.silk
 
 # test encoder and decoder
 ./encoder ../../audio/8000_16bit_1channel.pcm test_encoder_out.silk -Fs_API 8000

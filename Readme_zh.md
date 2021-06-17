@@ -1,5 +1,9 @@
 # SILK JNI
 
+> [Goto English](./Readme.md)
+
+Silk 编解码的JNI实现
+
 ## 目录结构
 
 ```

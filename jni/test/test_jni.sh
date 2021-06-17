@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm *.pcm *.silk *.class
+rm -f *.pcm *.silk *.class
 
 cp ../../audio/* .
 cp ../release/libsilk* .

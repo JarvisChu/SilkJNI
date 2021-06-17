@@ -1,4 +1,8 @@
-# silk coder
+# silk codec for JNI
+
+>[跳转到中文版本](./Readme_zh.md)
+
+Silk encoder and decoder for JNI
 
 ## Files
 

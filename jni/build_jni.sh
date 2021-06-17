@@ -2,7 +2,7 @@
 
 cd src
 
-rm SilkJNI.class SilkJNI.h
+rm -f SilkJNI.class SilkJNI.h
 
 javac SilkJNI.java # -> SilkJNI.class 
 javah SilkJNI      # -> SilkJNI.h

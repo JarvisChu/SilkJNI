@@ -12,6 +12,7 @@
 TestJNI.java is a demo for using libsilkjni.so
 
 ```bash
+cd test
 ./test_jni.sh
 ```
 
@@ -19,6 +20,6 @@ TestJNI.java is a demo for using libsilkjni.so
 1. write SilkJNI.java
 2. `javac SilkJNI.java`  -> SilkJNI.class
 3. `javah SilkJNI` -> SilkJNI.h
-4. write SilkJNI.c
-5. gcc -> libsilkjni.so
+4. write SilkJNI.cpp
+5. gcc/g++ -> libsilkjni.so
 6. use libsilkjni.so

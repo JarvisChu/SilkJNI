@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include "SKP_SILK_SDK_API.h"
-
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "SKP_Silk_SDK_API.h"

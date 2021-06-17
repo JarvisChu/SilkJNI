@@ -1,4 +1,4 @@
-# SILK JNI
+# Silk codec for JNI
 
 > [Goto English](./Readme.md)
 
@@ -29,7 +29,7 @@ tree -L 2
 
 ## 使用说明
 
-1. 进入silksrc，编译silk的动态库
+### 1. 编译silk的动态库 `libsilk.so`
 
 ```bash
 cd libsilk/
@@ -37,9 +37,6 @@ cd libsilk/
 ```
 
 编译完成之后，生成的动态库libsilk.so及相关的头文件存放在`libsilk/release`目录
-
-> 库中已包含了一份编译结果，【环境：centos7 64bit  && jdk 1.8】
-> **如果满足的话，直接使用即可，不用重复编译**
 
 接下来，可以使用`test/test_libsilk.sh`来验证libsilk.so的可用性。
 
@@ -51,7 +48,7 @@ cd libsilk/test
 运行完成，会使用libsilk.so 生成一个`decoder`程序和`encoder`程序，并且使用他们完成了音频的编解码。
 如果一切顺利，那么说明编译出来的libsilk.so是正确的、可用的。
 
-2. 进入jni，编译silk的jni库：libsilkjni.so
+### 2. 编译silk的jni库 `libsilkjni.so`
 
 ```bash
 cd jni/
@@ -62,8 +59,12 @@ cd jni/
 `build_jni.sh` 会生成 libsilkjni.so (Mac上是：libsilkjni.jnilib)
 `test_jni.sh` 会运行 TestJNI.java, 使用libsilkjni.so完成silk的编解码
 
+> 库中已包含了两份编译结果，如果满足的话，直接使用即可，不用重复编译
+> - **jni/release/mac_jdk1.8**: Mac Big Sur, jdk 1.8
+> - **jni/release/linux_64_jdk1.8**: centos7 64bit, jdk 1.8
+
 ## 示例
-详见 `jni/TestJNI.java`
+详见 `jni/test/TestJNI.java`
 
 ```java
 public class TestJNI {

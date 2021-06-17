@@ -1,4 +1,4 @@
-# silk codec for JNI
+# Silk codec for JNI
 
 >[跳转到中文版本](./Readme_zh.md)
 
@@ -29,9 +29,9 @@ tree -L 2
 
 ```
 
-## how to use
+## How to use
 
-1. build silk shared library: `libsilk.so`
+### 1. build silk shared library: `libsilk.so`
 
 ```bash
 cd libsilk/
@@ -49,7 +49,7 @@ cd libsilk/test
 
 `test_libsilk.sh` will generate a silk decoder `decoder` and a silk encoder `encoder` based on `libsilk.so`. Then using the `encoder` to encode `audio/8000_16bit_1channel.pcm` into silk audio, and the `decoder` to decode `audio/8000_16bit_1channel_20ms.silk` into pcm audio
 
-2. build silk jni library: libsilkjni.so
+### 2. build silk jni library: `libsilkjni.so`
 
 ```bash
 cd jni/
@@ -60,9 +60,13 @@ cd jni/
 `build_jni.sh` will build libsilkjni.so (libsilkjni.jnilib on Mac)
 `test_jni.sh` will run TestJNI.java, and decode silk to pcm using libsilkjni.so
 
-## example
+> There are jni libs already built for Mac/Linux, you can use directly if satisfied your enviroments
+> - **jni/release/mac_jdk1.8**: Mac Big Sur, jdk 1.8
+> - **jni/release/linux_64_jdk1.8**: centos7 64bit, jdk 1.8
 
-Please refer to `jni/TestJNI.java.`
+## Example
+
+Please refer to `jni/test/TestJNI.java.`
 
 ```java
 public class TestJNI {
